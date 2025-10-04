@@ -5,6 +5,12 @@ on:
 
 name: 'Trigger: Push action'
 
+on:
+  push:
+    branch:
+      - master
+  workflow_dispatch:
+
 jobs:
   shellcheck:
     name: Shellcheck
