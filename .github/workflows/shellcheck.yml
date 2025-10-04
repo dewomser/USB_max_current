@@ -2,14 +2,9 @@ on:
   push:
     branch:
       - master
-
+  workflow_dispatch:
 name: 'Trigger: Push action'
 
-on:
-  push:
-    branch:
-      - master
-  workflow_dispatch:
 
 jobs:
   shellcheck:
